@@ -180,7 +180,6 @@ int main() {
 
     // 7. PUNTEROS Y ESTRUCTURAS
     cout << "=== PUNTEROS Y ESTRUCTURAS ===" << endl;
-    
     struct Estudiante {
         string nombre;
         int edad;
@@ -188,22 +187,22 @@ int main() {
     };
     
     Estudiante estudiante = {"María", 20, 8.5};
-    Estudiante* ptrEstudiante = &estudiante;
-    
+    Estudiante* ptrestudiante = &estudiante;
+
     cout << "Acceso a estructura a través de puntero:" << endl;
-    cout << "  (*ptrEstudiante).nombre = " << (*ptrEstudiante).nombre << endl;
-    cout << "  ptrEstudiante->nombre = " << ptrEstudiante->nombre << endl;
-    cout << "  ptrEstudiante->edad = " << ptrEstudiante->edad << endl;
-    cout << "  ptrEstudiante->promedio = " << ptrEstudiante->promedio << endl;
+    cout << "  (*ptrEstudiante).nombre = " << (*ptrestudiante).nombre << endl;
+    cout << "  ptrEstudiante->nombre = " << ptrestudiante->nombre << endl;
+    cout << "  ptrEstudiante->edad = " << ptrestudiante->edad << endl;
+    cout << "  ptrEstudiante->promedio = " << ptrestudiante->promedio << endl;
     
     // Modificar a través del puntero
-    ptrEstudiante->edad = 21;
-    ptrEstudiante->promedio = 9.0;
-    
-    cout << "\nDespués de modificar:" << endl;
-    cout << "  edad = " << estudiante.edad << endl;
-    cout << "  promedio = " << estudiante.promedio << endl;
-    
+    ptrestudiante->edad = 21;
+    ptrestudiante->promedio = 9.0;
+    cout << endl;
+    cout << "Despues de modificar:" << endl;
+    cout << " Edad = " << ptrestudiante->edad << endl;
+    cout << " Promedio = " << ptrestudiante->promedio << endl;
+     
     cout << endl;
 
     // 8. RESUMEN Y BUENAS PRÁCTICAS

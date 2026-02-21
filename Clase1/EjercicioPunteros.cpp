@@ -1,6 +1,6 @@
 #include <iostream>
-#include <locale>
 #include <iomanip>
+#include <locale>
 using namespace std;
 
 /* 
